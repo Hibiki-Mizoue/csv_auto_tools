@@ -1,9 +1,4 @@
-# 仮想環境
 venv/
-
-# Excel 出力ファイル
+__pycache__/
 *.xlsx
-
-# VSCode 設定
-.vscode/
-
+working_data.csv
