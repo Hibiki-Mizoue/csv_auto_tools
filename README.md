@@ -7,7 +7,7 @@
 ## フォルダ構成
 csv_auto_tools/
 ├─ csv_auto.py # メインスクリプト
-├─ README.md # 説明書（このファイル）
+├─ README.md # このファイル
 ├─ requirements.txt # 依存ライブラリ
 ├─ examples/ # サンプル CSV を置く（再現用）
 │ ├─ sample_data_1.csv
@@ -17,43 +17,59 @@ csv_auto_tools/
 ├─ daily_total.png
 └─ category_total.png
 
-bash
+markdown
 コードをコピーする
 
 ## 使い方
 
-1. 仮想環境を作成・有効化
+1. 仮想環境を作成・有効化  
 
-```bash
-# Windows
+   **Windows の場合**
 python -m venv venv
 venv\Scripts\activate
 
-# mac / Linux
+markdown
+コードをコピーする
+
+**mac / Linux の場合**
 python -m venv venv
 source venv/bin/activate
-必要なライブラリをインストール
 
-bash
+markdown
 コードをコピーする
+
+2. 必要なライブラリをインストール  
+
 pip install -r requirements.txt
-サンプル CSV を準備（examples/ 内に置く）
 
-スクリプトを実行
-
-bash
+markdown
 コードをコピーする
+
+3. サンプル CSV を準備（`examples/` 内に置く）
+
+4. スクリプトを実行  
+
 python csv_auto.py
-Excel ファイルが生成されます（出力は Git で無視されます）
 
-出力イメージ
-日付別集計
+yaml
+コードをコピーする
 
-カテゴリ別集計
+5. Excel ファイルが生成されます（出力は Git で無視されます）
 
-注意事項
-仮想環境 (venv/) や生成 Excel ファイル (*.xlsx) は .gitignore により GitHub には上がりません
+---
 
-サンプル CSV は examples/ フォルダに置くこと
+## 出力イメージ
 
-他の開発環境でも同じ手順で再現可能です
+### 日付別集計
+![日付別集計](docs/screenshots/daily_total.png)
+
+### カテゴリ別集計
+![カテゴリ別集計](docs/screenshots/category_total.png)
+
+---
+
+## 注意事項
+
+- 仮想環境 (`venv/`) や生成 Excel ファイル (`*.xlsx`) は `.gitignore` により GitHub には上がりません  
+- サンプル CSV は `examples/` フォルダに置くこと  
+- 他の開発環境でも同じ手順で再現可能です

@@ -1,0 +1,13 @@
+本スクリプト使用ライブラリ
+
+pandas
+openpyxl
+
+補足
+
+1. pandas
+    ・CSV 読み込みや集計、Excel への書き出しに必要
+
+2.openpyxl
+    ・pandas で Excel（.xlsx）に出力する際に使うライブラリ
+    ・Excel の書式（太線、二重線、列幅調整など）を操作する場合にも必要
