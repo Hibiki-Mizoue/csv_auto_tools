@@ -31,3 +31,7 @@ Thumbs.db
 
 # --- ログファイル ---
 *.log
+
+# サンプル CSV を無視
+sample_data.csv
+
