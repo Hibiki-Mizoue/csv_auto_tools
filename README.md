@@ -81,13 +81,18 @@ csv_auto_tools/
 ├─ README.md                 # このファイル
 ├─ requirements.txt          # 依存ライブラリ
 ├─ .gitignore                # Git 無視設定
+├─ run.bat                   # Windows 用実行バッチ（任意）
 ├─ examples/                 # サンプル CSV を置く（再現用）
 │   ├─ sample_data_1.csv
 │   └─ sample_data_2.csv
-└─ docs/
-    └─ screenshots/          # Excel 出力結果のスクリーンショット
-        ├─ daily_total.png
-        └─ category_total.png
+├─ docs/
+│   ├─ screenshots/          # Excel 出力結果のスクリーンショット
+│   │   ├─ daily_total.png
+│   │   └─ category_total.png
+│   └─ images/               # 任意で追加する画像ファイル
+│       └─ sample_image.png
+└─ batch/                    # 任意で追加するバッチやスクリプト
+    └─ run_csv_auto.bat
 </code></pre>
 
 ---
