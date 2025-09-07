@@ -37,7 +37,7 @@ csv_auto_tools/
    python -m venv venv
    venv\Scripts\activate
 
-   **mac / Linux の場合**
+   mac / Linux の場合
 
    python -m venv venv
 source venv/bin/activate
