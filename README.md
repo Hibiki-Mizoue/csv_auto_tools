@@ -12,21 +12,21 @@
 
 ## フォルダ構成
 
-``` 
+<pre><code>
 csv_auto_tools/
-├─ csv_auto.py # メインスクリプト
-├─ README.md # このファイル
-├─ requirements.txt # 依存ライブラリ
-├─ .gitignore # Git 無視設定
-├─ examples/ # サンプル CSV を置く
-│ ├─ sample_data_1.csv
-│ └─ sample_data_2.csv
+├─ csv_auto.py               # メインスクリプト
+├─ README.md                 # このファイル
+├─ requirements.txt          # 依存ライブラリ
+├─ .gitignore                # Git 無視設定
+├─ examples/                 # サンプル CSV を置く（再現用）
+│   ├─ sample_data_1.csv
+│   └─ sample_data_2.csv
 └─ docs/
-└─ screenshots/ # Excel 出力結果のスクリーンショット
-├─ daily_total.png
-└─ category_total.png
+    └─ screenshots/          # Excel 出力結果のスクリーンショット
+        ├─ daily_total.png
+        └─ category_total.png
+</code></pre>
 
-``` 
 
 ## 使い方
 
