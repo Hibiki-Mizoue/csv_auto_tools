@@ -12,6 +12,7 @@
 
 ## フォルダ構成
 
+``` 
 csv_auto_tools/
 ├─ csv_auto.py # メインスクリプト
 ├─ README.md # このファイル
@@ -25,8 +26,7 @@ csv_auto_tools/
 ├─ daily_total.png
 └─ category_total.png
 
-
----
+``` 
 
 ## 使い方
 
