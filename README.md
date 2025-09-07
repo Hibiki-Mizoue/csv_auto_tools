@@ -1,18 +1,49 @@
-# CSV自動集計ツール
+# CSV 自動集計ツール
 
-このリポジトリは、CSV データを読み込み、**日付別・商品別の売上集計**を自動で行い、整形された Excel ファイルを生成する Python ツールです。  
-生成される Excel ファイルは、以下の特徴があります。
+## 概要
+複数の CSV データを自動で集計し、Excel に出力する Python ツールです。  
+日付別・カテゴリ別の集計を自動で行い、見やすい表を生成します。
 
-- タイトルは表の上に表示（横幅に応じて自動調整）  
-- ヘッダー下に二重線、表全体は太枠  
-- 売上列は桁区切りで表示  
-- 表は B3 から開始し、1行余白を確保  
+## フォルダ構成
+csv_auto_tools/
+├─ csv_auto.py
+├─ README.md
+├─ requirements.txt
+├─ examples/
+└─ docs/screenshots/
 
----
+bash
+コードをコピーする
 
-## 必要条件
+## 使い方
+1. 仮想環境を作成・有効化
+```bash
+python -m venv venv
+source venv/bin/activate  # mac/linux
+venv\Scripts\activate     # Windows
+必要なライブラリをインストール
 
-- Python 3.8 以上  
-- 必要ライブラリ：
-  ```bash
-  pip install pandas openpyxl
+bash
+コードをコピーする
+pip install -r requirements.txt
+サンプル CSV を準備（examples/ 内に置く）
+
+スクリプトを実行
+
+bash
+コードをコピーする
+python csv_auto.py
+Excel ファイルが生成されます（出力は無視される設定）
+
+出力イメージ
+日付別集計
+
+カテゴリ別集計
+
+注意
+仮想環境や生成 Excel ファイルは Git に上がらないよう .gitignore で管理しています
+
+サンプル CSV は examples/ フォルダに置いてください
+
+yaml
+コードをコピーする
