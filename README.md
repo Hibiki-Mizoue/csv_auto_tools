@@ -6,21 +6,32 @@
 
 ## フォルダ構成
 csv_auto_tools/
-├─ csv_auto.py
-├─ README.md
-├─ requirements.txt
-├─ examples/
-└─ docs/screenshots/
+├─ csv_auto.py # メインスクリプト
+├─ README.md # 説明書（このファイル）
+├─ requirements.txt # 依存ライブラリ
+├─ examples/ # サンプル CSV を置く（再現用）
+│ ├─ sample_data_1.csv
+│ └─ sample_data_2.csv
+└─ docs/
+└─ screenshots/ # Excel 出力結果のスクリーンショット
+├─ daily_total.png
+└─ category_total.png
 
 bash
 コードをコピーする
 
 ## 使い方
+
 1. 仮想環境を作成・有効化
+
 ```bash
+# Windows
 python -m venv venv
-source venv/bin/activate  # mac/linux
-venv\Scripts\activate     # Windows
+venv\Scripts\activate
+
+# mac / Linux
+python -m venv venv
+source venv/bin/activate
 必要なライブラリをインストール
 
 bash
@@ -33,17 +44,16 @@ pip install -r requirements.txt
 bash
 コードをコピーする
 python csv_auto.py
-Excel ファイルが生成されます（出力は無視される設定）
+Excel ファイルが生成されます（出力は Git で無視されます）
 
 出力イメージ
 日付別集計
 
 カテゴリ別集計
 
-注意
-仮想環境や生成 Excel ファイルは Git に上がらないよう .gitignore で管理しています
+注意事項
+仮想環境 (venv/) や生成 Excel ファイル (*.xlsx) は .gitignore により GitHub には上がりません
 
-サンプル CSV は examples/ フォルダに置いてください
+サンプル CSV は examples/ フォルダに置くこと
 
-yaml
-コードをコピーする
+他の開発環境でも同じ手順で再現可能です
